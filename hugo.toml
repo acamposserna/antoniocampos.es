@@ -1,0 +1,91 @@
+baseURL = "https://www.antoniocampos.es"
+languageCode = "es-es"
+theme = "adritian-free-hugo-theme"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+  [[menu.header]]
+  name = "Sobre mí"
+  URL = "#about"
+  weight = 2
+
+  [[menu.header]]
+  name = "Experiencia"
+  URL = "#experience"
+  weight = 3
+
+  [[menu.header]]
+  name = "Formación"
+  URL = "#education"
+  weight = 4
+
+  [[menu.header]]
+  name = "Proyectos"
+  URL = "#portfolio"
+  weight = 5
+
+  [[menu.header]]
+  name = "Blog"
+  URL = "#blog"
+  weight = 6
+
+  [[menu.header]]
+  name = "Contacto"
+  URL = "#contact"
+  weight = 7
+
+  [[menu.footer]]
+  name = "Sobre mí"
+  URL = "#about"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Proyectos"
+  URL = "#portfolio"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Contacto"
+  URL = "#contact"
+  weight = 4
+
+
+[params]
+
+  sections = ["showcase", "about", "experience", "education", "client-and-work", "blog", "testimonial", "contact", "newsletter"]
+
+  googleTagManagerID = "GTM-000000" # Google Analytics works with Google Tag Manager
+  homepageExperienceCount = 6
+  homepagePostsCount = 3
+  
+  [params.logo]
+    text1 = "Antonio"
+    text2 = "Campos"
+
+  [params.footer]
+      copyright = "© Antonio Campos"
+      [params.footer.radity_logo]
+        x = "img/general/design-and-code-radity.png"
+        _2x = "img/general/design-and-code-radity@2x.png"
+        alt = "Design & Code - Radity"
